@@ -67,7 +67,7 @@ html {
 }
 
 .subheader {
-    
+    margin-top: 5rem;
     margin-bottom: 2rem;
     text-align: left;
     line-height:2rem;
@@ -82,37 +82,7 @@ html {
     font-size: 1.5rem;
 }
     
-.main {
-    margin-top: 10px;
-    
-    
-}
-.main a span,
-.main a p {
-    display: inline-block;
-    margin: 0; /* Remove default margins to ensure they are on the same line */
-}
 
-
-.main a{
-    display: flex;
-    text-decoration: none;
-    justify-content: space-between;
-    color: #ffffff;
-    font-size: 1.3rem;
-    flex-direction: row;
-    padding-bottom: 1rem;
-    margin-top: 1.3rem;
-    border-bottom: 1px solid gray;
-    max-width: inherit;
-}
-.main p {
-    color: gray;
-}
-
-.main a:hover p {
-   color: #ffffff; 
-}
 
 .footer {
 
@@ -129,7 +99,7 @@ html {
     text-decoration: none;
     justify-content: space-between;
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     flex-direction: row;
     padding-bottom: 1rem;
     border: none;
