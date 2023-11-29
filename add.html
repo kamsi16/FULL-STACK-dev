@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Multiple SSH keys to an EC2 Server</title>
+        <link rel="stylesheet" href="add.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <a class="icon" href="home.html">
+                    <svg  height="100" viewBox="0 0 229 78" width="200" xmlns="http://www.w3.org/2000/svg" color="gray">
+                        <path d="M55.7568 8.69113C54.2925 7.56473 52.4851 6.96568 50.6368 7.00152H47.6672C41.1238 11.9116 33.961 15.9411 26.368 18.9823C18.8365 22.0851 11.7043 26.0684 5.12 30.8607C1.92512 33.7177 0.06656 37.7829 0 42.0735C0.37888 43.6965 1.52576 45.0329 3.072 45.6575C4.4544 46.1183 5.888 46.6815 7.2704 47.2447C21.2634 53.1839 34.4064 59.5686 46.6944 66.3935C48.3226 67.5762 49.8637 68.8767 51.3024 70.2847C52.2394 70.6943 53.248 70.9043 54.272 70.8991C56.7962 70.9196 59.2435 70.0492 61.184 68.4415C63.1552 67.0335 64.1997 64.6527 63.8976 62.2463C63.9795 60.4799 62.9299 58.8569 61.2864 58.2015L40.0896 48.8831C33.0547 45.8982 26.2195 42.478 19.6096 38.6431C24.2432 32.8729 30.4794 28.5977 37.5296 26.3551C44.5389 24.0972 51.0054 20.421 56.5248 15.5519C57.3184 14.789 57.7638 13.7343 57.7536 12.6335C57.7178 11.0873 56.9856 9.63321 55.7568 8.69113Z" fill="grey"></path>
+                        <path d="M173.192 8.69113C174.657 7.56473 176.464 6.96568 178.312 7.00152H181.282C187.825 11.9116 194.988 15.9411 202.581 18.9823C210.112 22.0851 217.245 26.0684 223.829 30.8607C227.024 33.7177 228.882 37.7829 228.949 42.0735C228.57 43.6965 227.423 45.0329 225.877 45.6575C224.495 46.1183 223.061 46.6815 221.679 47.2447C207.686 53.1839 194.543 59.5686 182.255 66.3935C180.626 67.5762 179.085 68.8767 177.647 70.2847C176.71 70.6943 175.701 70.9043 174.677 70.8991C172.153 70.9196 169.705 70.0492 167.765 68.4415C165.794 67.0335 164.749 64.6527 165.051 62.2463C164.969 60.4799 166.019 58.8569 167.663 58.2015L188.859 48.8831C195.894 45.8982 202.729 42.478 209.339 38.6431C204.706 32.8729 198.47 28.5977 191.419 26.3551C184.41 24.0972 177.944 20.421 172.424 15.5519C171.631 14.789 171.185 13.7343 171.195 12.6335C171.231 11.0873 171.963 9.63321 173.192 8.69113Z" fill="grey"></path>
+                        <path d="M93.3949 21.24C93.5946 21.24 93.7943 21.2451 93.9939 21.2502C94.1731 21.2451 94.3523 21.24 94.5264 21.24C97.752 21.24 100.916 22.1821 103.62 23.9638C107.367 27.5273 109.226 32.6474 108.637 37.7879C108.637 45.6215 106.384 50.8438 101.776 53.6086C99.4775 54.9091 96.8919 55.6106 94.25 55.6566C94.2397 55.6566 94.2346 55.6566 94.2243 55.6566C90.2051 55.6566 86.4164 53.7571 84.01 50.5366C81.1684 47.0704 79.3917 42.8566 78.89 38.4022C77.8557 33.6713 79.3251 28.7408 82.7811 25.3462C85.6893 22.6992 89.4781 21.24 93.3949 21.24ZM93.7892 42.4982C96.6154 42.4982 98.9092 40.2045 98.9092 37.3782C98.9092 34.552 96.6154 32.2582 93.7892 32.2582C90.9629 32.2582 88.6692 34.552 88.6692 37.3782C88.6692 40.2045 90.9629 42.4982 93.7892 42.4982ZM93.3949 11C86.9028 11 80.6871 13.4064 75.8896 17.7737C75.7923 17.8608 75.7002 17.9478 75.608 18.04C69.7303 23.8102 67.201 32.0022 68.7728 40.0509C69.5613 46.2205 72.0343 52.0163 75.9511 56.8598C80.2775 62.5226 87.0871 65.8966 94.2243 65.8966C98.7555 65.8198 103.041 64.6525 106.809 62.5277C106.886 62.4816 106.968 62.4355 107.045 62.3894C112.375 59.1894 118.713 52.4259 118.872 38.3357C119.604 30.2512 116.568 22.1462 110.675 16.545C110.235 16.1251 109.753 15.7462 109.246 15.4134C104.864 12.5309 99.7744 11.0051 94.5264 11.0051C94.3575 11.0051 94.1885 11.0051 94.0195 11.0102C93.8096 11 93.6048 11 93.3949 11Z" fill="grey" clip-rule="evenodd" fill-rule="evenodd"></path>
+                        <path d="M103.62 23.9638C100.768 22.0899 97.4039 21.1376 93.9939 21.2502C89.8621 21.0915 85.8378 22.5661 82.7811 25.3462C79.3251 28.7408 77.8557 33.6713 78.89 38.4022C79.3917 42.8566 81.1684 47.0704 84.01 50.5366C86.4215 53.7674 90.2205 55.6669 94.25 55.6566C96.8919 55.6106 99.4775 54.9091 101.776 53.6086C106.384 50.8438 108.637 45.6215 108.637 37.7879C109.226 32.6474 107.367 27.5325 103.62 23.9638ZM93.7892 42.4982C90.9629 42.4982 88.6692 40.2045 88.6692 37.3782C88.6692 34.552 90.9629 32.2582 93.7892 32.2582C96.6154 32.2582 98.9092 34.552 98.9092 37.3782C98.9092 40.2045 96.6154 42.4982 93.7892 42.4982Z" fill="grey" clip-rule="evenodd" fill-rule="evenodd"></path>
+                        <path d="M114.316 37.2695C114.316 48.0391 105.585 56.7695 94.8156 56.7695C84.046 56.7695 75.3156 48.0391 75.3156 37.2695C75.3156 26.5 84.046 17.7695 94.8156 17.7695C105.585 17.7695 114.316 26.5 114.316 37.2695Z" fill="grey"></path>
+                        <path d="M149.112 31.671C148.297 38.2955 147.461 57.4944 147.273 67.341C147.232 69.5043 145.832 71.4364 143.676 71.6269C139.382 72.0066 133.814 71.3815 130.964 69.7944C129.748 68.6547 129.164 66.9933 129.396 65.3419C129.688 63.9143 129.917 62.3912 130.121 60.9124C131.974 45.8246 133.016 31.25 133.249 17.1958C133.039 15.1945 132.684 13.2095 132.184 11.2596C132.297 10.2434 132.62 9.26487 133.136 8.38062C134.381 6.1844 136.358 4.50014 138.721 3.62348C140.926 2.62037 143.51 2.90621 145.443 4.37102C147.013 5.18328 150.254 8.74899 150 10.5L149.112 31.671Z" fill="grey"></path>
+                    </svg>
+                </a>
+                <div class="topright">
+                <a href="home.html" >
+                    <p>Home</p>
+                </a>
+                <a href="explore.html">
+                    <p>Explore</p>
+                </a>
+                </div>
+            </div>
+            <div class="sublinks">
+                <p>
+                    <a>Linux</a>
+                    <a>Amazon Web Services</a>
+                </p>
+            </div>
+            <div class="subhead">
+                <h2>Add Multiple SSH keys to an EC2 Server</h2>
+                <p>April 7, 2023</p>
+            </div>
+            <div class="intro">
+                <P>SSH keys are a way to authenticate yourself to a remote server. They are a more secure way to authenticate yourself to a remote server than using a password. SSH keys are a pair of keys, a public key and a private key. The public key is stored on the remote server and the private key is stored on your local machine. When you try to authenticate yourself to the remote server, the remote server will check if the public key matches the private key. If it does, you are authenticated.</P>
+                <p>EC2 instances are virtual machines that you can spin up on AWS and deploy your application on. AWS only allows you to create and attach a single SSH key to an EC2 instance. However, you may want to have multiple SSH keys attached to an EC2 instance. Some examples of when you may want to do this are:</p>
+            </div>
+            <ul>
+                <li>You have multiple developers working on the same project and you want to give them access to the EC2 instance.</li>
+                <li>You are using a CI/CD tool like Jenkins and you want to give it access to the EC2 instance.</li>
+                <li>You want to give access to some other service that needs to access the EC2 instance.</li>
+            </ul>
+            <div class="intro">
+                <p>Sharing your personal SSH key is not a good idea because you might be using the same key for multiple different services. If the key is compromised, then all of your services are compromised. So, it is a good idea to create a new SSH key for each service that you want to give access to.</p>
+                <p>In this guide, we will see how to create and add multiple SSH keys to an EC2 instance.</p>
+            </div>
+            <div class="steps">
+                <h2>Step 1: Create a new SSH key</h2>
+                <p>To create a new SSH key, you can use the <span style="color: #e7ee98;">`ssh-keygen`</span> command. The <span style="color: #e7ee98;">`ssh-keygen`</span> command is a tool for creating new authentication keys. It is available on most Linux distributions and macOS. You can use the following command to create a new SSH key:</p>
+            </div>
+            <div class="box">
+                <div class="snippet">
+                    <span style="color: #62e884;">ssh-keygen</span>
+                    <span> </span>
+                    <span style="color: #bf9eee;">-t</span>
+                    <span> </span>
+                    <span style="color: #e7ee98;">rsa</span>
+                    <span style="color: #bf9eee;">-b</span>
+                    <span> </span>
+                    <span style="color: #bf9eee;">4096</span>
+                    <span> </span>
+                    <span style="color: #bf9eee;">-f</span>
+                    <span> </span>
+                    <span style="color:#e7ee98">./key_name</span>                 
+                </div>
+            </div>
+            <div class="intro">
+                <p>The -t flag specifies the type of key to create. The <span style="color: #e7ee98;">`-b`</span> flag specifies the number of bits in the key to create. The <span style="color: #e7ee98;">`-f`</span> flag specifies the file in which to save the key. The command above will create a new SSH key with 4096 bits and save it in a file called <span style="color: #e7ee98;">`key_name`</span>.</p>
+                <p>The command above will create two files, <span style="color: #e7ee98;">`key_name`</span> and <span style="color: #e7ee98;">`key_name.pub`</span>. The key_name file is the private key and the <span style="color: #e7ee98;">`key_name.pub`</span> file is the <span style="color: #e7ee98;">`public key`</span>.</p>
+            </div>
+            <div class="steps">
+                <h2>Private key</h2>
+                <p>The private key is the key that you will use to authenticate yourself to the remote server. You should keep this key safe and not share it with anyone. If someone gets access to your private key, they can impersonate you on the remote server.</p>
+                <h2>Public key</h2>
+                <p>The public key is the key that you will give to the remote server. The remote server will use this key to authenticate you. You can share this key with anyone.</p>
+            </div>
+            <div class="steps">
+                <h2>Step 2: Allow access to the Key</h2>
+                <p>There are two ways to add the SSH key to the remote EC2 instance. You can either use the <span style="color: #e7ee98;">`ssh-copy-id`</span> command or you can manually add the key to the <span style="color: #e7ee98;">`authorized_keys`</span> file.</p>
+            </div>
+            <div class="option">
+                <h2>Option 1: Using the <span style="color: #e7ee98">`ssh-copy-id`</span></h2>
+                <p>The <span style="color:#e7ee98">`ssh-copy-id`</span> command is a tool for copying SSH keys to a remote server. You can use the following command to copy the SSH key to the remote server:</p>
+            </div>
+            <div class="box">
+                <div class="snippet">
+                    <span style="color: #62e884;">ssh-copy-id</span>
+                    <span> </span>
+                    <span style="color: #bf9eee;">-i</span>
+                    <span> </span>
+                    <span style="color: #e7ee98;">./key_name.pub</span>
+                    <span></span>
+                    <span style="color: #e7ee98;">user@remote_server</span>
+                </div>
+            </div>
+            <div class="option">
+                <p>The <span style="color: #e7ee98;">`-i`</span> flag specifies the file that contains the public key. The <span style="color: #e7ee98;">`user`</span> is the username of the user on the remote server. The <span style="color: #e7ee98;">`remote_server`</span> is the IP address or domain name of the remote server.</p>
+            </div>
+            <div class="option">
+                <h2>Option 2: Manually add the Key</h2>
+                <p>You can also manually add the key to the <span style="color: #e7ee98;">`authorized_keys`</span> file. The <span style="color: #e7ee98;">`authorized_keys`</span> file is a file that contains all the public keys that are allowed to authenticate to the remote server.</p>
+                <p>First of all, you need to copy the content of the public key file to your clipboard. Next, connect to the remote server using SSH. You can use the following command to connect to the remote server:</p>
+            </div>
+            <div class="box">
+                <div class="snippet">
+                    <span style="color: #62e884;">ssh</span>
+                    <span> </span>
+                    <span style="color: #e7ee98;">user@remote_server</span> 
+                </div>
+            </div>
+            <div class="option">
+                <p>The user is the username of the <span style="color: #e7ee98;">`user`</span> on the remote server. The <span style="color: #e7ee98;">`remote_server`</span> is the IP address or domain name of the remote server. Once you are connected to the remote server, open the <span style="color: #e7ee98;">`authorized_keys`</span> file using the following command:</p>
+            </div>
+            <div class="box">
+                <div class="snippet">
+                    <span style="color: #62e884;">sudo</span>
+                    <span style="color:#e7ee98;"> iv </span>
+                    <span style="color: #e7ee98;"> ~/.ssh/authorized_keys</span>  
+                </div>
+            </div>
+            <div class="intro">
+                <p>Once you are in the <span style="color: #e7ee98;">`authorized_keys`</span> file, press the <span style="color: #e7ee98;">`i`</span> key to enter insert mode. Paste the content of the public key file to the end of the file. Once you are done, press the <span style="color: #e7ee98;">`esc`</span> key to exit insert mode. Then, type <span style="color: #e7ee98;">`:wq`</span> and press enter to save the file.</p>
+            </div>
+            <div class="intro">
+                <h2>Step 3: Test the SSH key</h2>
+                <p>Once you have copied the public key to the remote server, you can test the SSH key on your local machine. You can use the following command to test the SSH key:</p>
+            </div>
+            <div class="box">
+                <div class="snippet">
+                    <span style="color: #62e884;">ssh</span>
+                    <span> </span>
+                    <span style="color: #e7ee98;">user@remote_server</span>
+                </div>
+            </div>
+            <div  class="intro">
+                <p>The <span style="color:#e7ee98">`-i`</span> flag specifies the file that contains the private key. The <span style="color: #e7ee98;">`user`</span> is the username of the user on the remote server. The <span style="color:#e7ee98">`remote_server`</span> is the IP address or domain name of the remote server.</p>
+            </div>
+            <div class="intro">
+                <h1>Conclusion</h1>
+                <p>In this guide, we saw how to create and add multiple SSH keys to an EC2 instance. We saw how to create a new SSH key and how to add the SSH key to the remote EC2 instance. We also saw how to test the SSH key on your local machine.</p>
+            </div>
+            <div class="footer">
+                <p>© All rights reserved — cs.fyi</p>
+            </div>
+        </div>
+    </body>
+</html>

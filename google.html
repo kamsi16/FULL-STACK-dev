@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Homepage</title>
+    <style>
+        body {
+            text-align: center; /* Center-align text content within the body */
+            margin: 0; /* Remove default margin to align content properly */
+            padding: 0; /* Remove default padding */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            height: 100vh; /* Use the full viewport height */
+        }
+
+        .text {
+            width: 400px;
+            border: 1px solid #101010;
+            border-radius: 24px;
+            margin: 10px; /* Add margin to create space between elements */
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 24px;
+
+        }
+
+        .image {
+            width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .shift {
+            display:flex;
+            justify-content: center;
+            
+        }
+
+        button {
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="google.png" alt="Google pic">
+        <input class="text" type="text" placeholder="Search...">
+        <div class="shift">
+            <button>Google Search</button>
+            <button>I'm feeling lucky</button>
+        </div>
+        <p>Learn more <a href="reg.html">here</a></p>
+    </div>
+</body>
+</html>

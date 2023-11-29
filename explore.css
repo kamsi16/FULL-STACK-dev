@@ -1,0 +1,125 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,apple color emoji,segoe ui emoji,Segoe UI Symbol,noto color emoji;
+    font-size: 42px;
+    text-align: center;  
+    background-color: #161515; 
+}
+
+.content {
+    
+    width: 45rem ;
+    margin-top: 1.5rem;
+    display: block;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    
+    
+}
+
+    
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem ;
+    margin-bottom: 2rem;
+    
+}
+
+.header a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    
+}
+
+.header p {
+    margin-left: 1.7rem;
+    color: gray;
+    
+}
+
+.icon {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.icon:hover path {
+    fill: #ffffff;
+}
+.topright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.topright :hover {
+    color: #ffffff;
+}
+
+.subheader {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.subheader h1{
+    margin-top: 4rem;
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 0.2rem;
+}
+.subheader p{
+    margin: 0;
+    color:gray;
+    font-size: 1.4rem;
+}
+
+.subhead{
+    font-size: 0.8rem;
+    color: grey;
+    text-align: left;
+    margin-top: 1rem;
+}
+.sublinks {
+    display: flex;
+    align-items: left;
+    color: rgb(238, 236, 236);
+    margin-top: 0.3rem;
+    flex-wrap: wrap;
+    line-height: .8rem;
+}
+
+
+
+.sublinks a {
+    border: 0 solid;
+    border-radius: 0.5rem;
+    background-color:#323434;
+    padding: .4em 1em;
+    margin-right: .5rem;
+    text-decoration: none;
+    color: #5f5f62;
+    
+}
+
+
+.sublinks a:hover{
+    color: #050404;
+    background-color: #b9b5b5;
+}
+
+.left{
+    margin-left: 0.3rem;
+}
+
+.footer {
+    margin-top:15rem;
+    margin-bottom: 7rem;
+    color: rgb(225, 221, 221);
+    font-size: 1.2rem;
+}

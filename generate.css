@@ -1,0 +1,213 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,apple color emoji,segoe ui emoji,Segoe UI Symbol,noto color emoji;
+    font-size: 42px;
+    text-align: center;  
+    background-color: #161515; 
+}
+.content {
+    
+    width: 50rem ;
+    margin-top: 1.5rem;
+    display: block;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    
+    
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem ;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    justify-items: center;
+
+    
+}
+
+.header p {
+    margin-left: 10px;
+    color: gray;
+    
+}
+
+.icon {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.icon:hover path {
+    fill: #ffffff;
+}
+.header p {
+    margin-left: 2rem;
+    color: gray;
+    
+}
+.topright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topright :hover {
+    color: #ffffff;
+}
+
+
+.sublinks {
+    display: block;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 4rem;
+    
+}
+
+.sublinks .top {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}  
+
+.sublinks .top a {
+    border: 0 solid;
+    background-color: rgb(98, 97, 97);
+    border-radius: 10rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+}
+
+.sublinks h1 {
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 6rem;
+    margin-bottom: 0.5rem;
+}
+
+.sublinks .bottom  {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: darkgrey;
+}
+
+.intro {
+    color: #ffffff;
+    display: block;
+    text-align: left;
+    font-size: 1.72rem;
+}
+
+.intro h2{
+    font-size: 4rem;
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+ul li {
+    position: relative;
+    font-size: 1.72rem;
+    color: rgb(222, 218, 218);
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+ul li::before {
+    content: "\2022"; /* Unicode character for a bullet point */
+    color: rgb(222, 218, 218);
+    border-radius: 50%; /* Make it a circle */
+    display: inline-block;
+    width: 1rem; /* Adjust as needed */
+    height: 1rem; /* Adjust as needed */
+    margin-right: 0.5rem; /* Adjust as needed for spacing */
+    position: absolute;
+    left: -2rem; /* Adjust as needed based on your margin-left value */
+    line-height: 1.2em;
+    text-align: center;
+}
+.yellow-text {
+    color:#e7ee98;
+}
+
+.box {
+   
+    
+    line-height: 1.7142857;
+    margin-top: 1.7142857em;
+    margin-bottom: 1.7142857em;
+    border-radius: .375rem;
+    padding: .8571429rem 1.1428571rem;
+    background-color: #282a36;
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+}
+
+.snippet {
+    color: white;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    text-align: left;
+    font-size: .875rem;
+    font-weight: 2rem;
+    zoom: 1.5;
+}
+
+.space {
+    margin-right: 1.3rem;
+}
+ul a {
+    color: #97e1f1;
+}
+
+.intro a{
+    color: #97e1f1;
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    color: grey;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 2700px){
+    .header {
+        max-width: 700px;
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .topright{
+        position: absolute;
+        left: 80%;
+        zoom: 1.2;
+    }
+    .sublinks{
+        margin-top: 100px;
+    }
+
+    
+    .content {
+       left: 2%;
+       right: 2%;
+    }
+}
